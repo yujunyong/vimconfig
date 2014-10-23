@@ -61,7 +61,7 @@ Plugin 'groenewege/vim-less'
 Plugin 'bling/vim-airline'
 
 " 在terminal下,不同模式中改变光标的形状
-Plugin 'jszakmeister/vim-togglecursor'
+" Plugin 'jszakmeister/vim-togglecursor'
 
 " 使terminal的colortheme和gui的有相同效果
 " Plugin 'godlygeek/csapprox'
