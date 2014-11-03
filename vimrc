@@ -63,9 +63,6 @@ Plugin 'bling/vim-airline'
 " 在terminal下,不同模式中改变光标的形状
 " Plugin 'jszakmeister/vim-togglecursor'
 
-" 使terminal的colortheme和gui的有相同效果
-" Plugin 'godlygeek/csapprox'
-
 " ---> 效率
 "*************************************************
 " js语法，规范检察工具
@@ -73,9 +70,6 @@ Plugin 'Shutnik/jshint2.vim'
 
 " 格式化代码工具
 Plugin 'editorconfig/editorconfig-vim'
-
-" 管理wordpress blog
-" Plugin 'pkufranky/VimRepress'
 
 " 快速编写html，css的代码
 Plugin 'mattn/emmet-vim'
@@ -103,9 +97,6 @@ Plugin 'tejr/vawk'
 
 " 在insert-modes, command-line modes在绑定emacs快捷键
 Plugin 'maxbrunsfeld/vim-emacs-bindings'
-
-" Sublime text 的多标签功能
-" Plugin 'terryma/vim-multiple-cursors'
 
 " 整合ack
 Plugin 'Ack.vim'
@@ -156,7 +147,7 @@ let jshint2_height=20
 let g:indentLine_color_term=239
 let g:indentLine_char='┆'
 
-" ---> JavaScript syntax 配置 javascript语法高亮Plugin
+" ---> JavaScript syntax 配置
 "*************************************************
 " 打开javascript折叠
 let b:javascript_fold=1
@@ -164,7 +155,7 @@ let b:javascript_fold=1
 " 打开javascript对dom、html和css的支持
 let javascript_enable_domhtmlcss=1
 
-" ---> vimRepress 配置
+" ---> bling/vim-airline 配置
 "*************************************************
 if !exists('g:airline_symbols')
 	let g:airline_symbols = {}
@@ -173,26 +164,10 @@ endif
 let g:airline_left_sep = ''
 let g:airline_right_sep = ''
 
-" ---> vimRepress 配置
-"*************************************************
-" let VIMPRESS=[{'username':'michael', 'password':'michael_geek', 'blog_url':'http://localhost/wordpress/'}]
-
 " ---> vim-surround 配置
 "*************************************************
 " let g:surround_37="{% \r %}"
 " let g:surround_123="{{ \r }}"
-
-" ---> terryma/vim-multiple-cursors 配置
-"*************************************************
-" 允许visual mode下的多光标
-" g:multi_cursor_exit_from_visual_mode
-
-" 允许insert mode下的多光标
-" g:multi_cursor_exit_from_insert_mode
-
-" Default highlighting (see help :highlight and help :highlight-link)
-" highlight multiple_cursors_cursor term=reverse cterm=reverse gui=reverse
-" highlight link multiple_cursors_visual Visual
 
 
 
