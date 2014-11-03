@@ -263,12 +263,18 @@ syntax enable
 set cursorline
 
 " 设置theme
-try
+" 需要 'export TERM=screen-256color'
+if $TERM =~ '^xterm' || $TERM =~ '^screen' || $TERM=~ '256color$'
+	set background=dark
+	let g:solarized_termcolors = 256
 	colorscheme solarized
-catch
-endtry
-
-set background=dark
+elseif has('gui_running')
+	set background=dark
+	let g:solarized_termcolors = 256
+	colorscheme solarized
+elseif $TERM =~ 'cons25'
+	colorscheme default
+endif
 
 " 当在gui时设置额外的参数
 if has("gui_running")
