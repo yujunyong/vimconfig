@@ -1,12 +1,33 @@
 "***********************************************************************
+" ===> 定义一些需要的函数
+"***********************************************************************
+silent function! OSX()
+	return has('macunix')
+endfunction
+
+silent function! LINUX()
+	return has('unix') && !has('macunix') && !has('win32unix')
+endfunction
+
+silent function! WINDOWS()
+	return  (has('win16') || has('win32') || has('win64'))
+endfunction
+
+"***********************************************************************
 " ===> Vundle.vim Plugin 管理
 "***********************************************************************
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+if !WINDOWS()
+	set rtp+=~/.vim/bundle/Vundle.vim
+	call vundle#begin()
+else
+	set rtp+=~/vimfiles/bundle/Vundle.vim/
+	let path='~/vimfiles/bundle'
+	call vundle#begin(path)
+endif
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
 
@@ -111,7 +132,6 @@ Plugin 'The-NERD-tree'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-
 "***********************************************************************
 " ===> Plugin 配置
 "***********************************************************************
@@ -195,7 +215,7 @@ set wildmenu
 
 " 忽略下列文件
 set wildignore=*.o,*~,*.pyc
-if has("win16") || has("win32")
+if WINDOWS()
     set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.DS_Store
 else
     set wildignore+=.git\*,.hg\*,.svn\*
@@ -260,13 +280,17 @@ if has("gui_running")
 endif
 
 " 设置字体
-set guifont=Monaco:h12
+if OSX()
+	set guifont=Monaco:h12
+else
+	set guifont=Monaco:h12:b
+endif
 
 " 设置utf8为标准编码，en_US为标准语言
 set encoding=utf-8
 
 set fileencodings=utf-8,chinese,latin-1
-if has("win32")
+if WINDOWS()
 	set fileencoding=chinese
 else
 	set fileencoding=utf-8
