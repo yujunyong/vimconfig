@@ -69,7 +69,7 @@ Plugin 'bling/vim-airline'
 Plugin 'Shutnik/jshint2.vim'
 
 " 格式化代码工具
-Plugin 'editorconfig/editorconfig-vim'
+" Plugin 'editorconfig/editorconfig-vim'
 
 " 快速编写html，css的代码
 Plugin 'mattn/emmet-vim'
@@ -102,7 +102,7 @@ Plugin 'maxbrunsfeld/vim-emacs-bindings'
 Plugin 'Ack.vim'
 
 " 浏览代码的方法，变量
-Plugin 'taglist.vim'
+" Plugin 'taglist.vim'
 
 " 浏览文件
 Plugin 'The-NERD-tree'
@@ -145,7 +145,7 @@ let jshint2_height=20
 " ---> indentLine 配置
 "*************************************************
 let g:indentLine_color_term=239
-let g:indentLine_char='┆'
+let g:indentLine_char='|'
 
 " ---> JavaScript syntax 配置
 "*************************************************
@@ -291,7 +291,7 @@ set smarttab
 set list
 
 " 设置tab和空格样式,每行末尾的空格显示为'-'
-set lcs=tab:\┆\ ,nbsp:%,trail:-
+set lcs=tab:\|\ ,nbsp:%,trail:-
 
 " Tab键显示的宽度设置为4个空格
 set tabstop=4
