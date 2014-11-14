@@ -2,10 +2,10 @@
 
 ## 截图
 ### macvim 截图
-![macvim 截图](https://yujunyong.github.io/images/vim/macvim.jpg)
+![macvim 截图](https://yujunyong.github.io/images/vim/macvim.png)
 
 ### 终端下的截图
-![macvim 截图](https://yujunyong.github.io/images/vim/vim.jpg)
+![macvim 截图](https://yujunyong.github.io/images/vim/vim.png)
 
 ## 配置简介
 * 采用[Vundle](https://github.com/gmarik/Vundle.vim)管理vim的插件
