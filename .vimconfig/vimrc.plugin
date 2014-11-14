@@ -1,5 +1,5 @@
 "***********************************************************************
-" ===> Vundle.vim Plugin 管理
+"* Vundle.vim Plugin 管理                                              *
 "***********************************************************************
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -13,14 +13,9 @@ else
 	let path='~/vimfiles/bundle'
 	call vundle#begin(path)
 endif
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
-
-" The following are examples of different formats supported.
-" Keep Plugin commands between vundle#begin/end.
 
 " plugin on GitHub repo
 Plugin 'tpope/vim-fugitive'
@@ -28,23 +23,10 @@ Plugin 'tpope/vim-fugitive'
 " plugin from http://vim-scripts.org/vim/scripts.html
 Plugin 'L9'
 
-" Git plugin not hosted on GitHub
-" Plugin 'git://git.wincent.com/command-t.git'
 
-" git repos on your local machine (i.e. when working on your own plugin)
-" Plugin 'file:///home/gmarik/path/to/plugin'
-
-" The sparkup vim script is in a subdirectory of this repo called vim.
-" Pass the path to set the runtimepath properly.
-" Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-
-" Avoid a name conflict with L9
-" Plugin 'user/L9', {'name': 'newL9'}
-
-" All of your Plugins must be added before the following line
-
-" ---> vim界面
-"*************************************************
+"+===============================================+
+"| vim界面                                       |
+"+===============================================+
 " 显示以空格缩进的线
 Plugin 'Yggdroot/indentLine'
 
@@ -66,11 +48,9 @@ Plugin 'groenewege/vim-less'
 " 状态栏加强，美化
 Plugin 'bling/vim-airline'
 
-" 在terminal下,不同模式中改变光标的形状
-" Plugin 'jszakmeister/vim-togglecursor'
-
-" ---> 效率
-"*************************************************
+"+===============================================+
+"| 效率                                          |
+"+===============================================+
 " js语法，规范检察工具
 Plugin 'Shutnik/jshint2.vim'
 
@@ -118,11 +98,11 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 
 "***********************************************************************
-" ===> Plugin 配置
+"* Plugin 配置                                                         *
 "***********************************************************************
-
-" ---> jshint2 配置
-"*************************************************
+"+===============================================+
+"| jshint2 配置                                  |
+"+===============================================+
 " set JSHint command path if it installed locally
 let jshint2_command='/usr/local/bin/jshint'
 
@@ -141,27 +121,30 @@ let jshint2_confirm=0
 " Do not use colored messages
 " let jshint2_color=0
 
-" Hide error codes in error list (if you don't use error ignoring or error codes confuses you)
+" Hide error codes in error list
 let jshint2_error=0
 
 " Set default height of error list
 let jshint2_height=20
 
-" ---> indentLine 配置
-"*************************************************
+"+===============================================+
+"| indentLine 配置                               |
+"+===============================================+
 let g:indentLine_color_term=239
 let g:indentLine_char='|'
 
-" ---> JavaScript syntax 配置
-"*************************************************
+"+===============================================+
+"| JavaScript syntax 配置                        |
+"+===============================================+
 " 打开javascript折叠
 let b:javascript_fold=1
 
 " 打开javascript对dom、html和css的支持
 let javascript_enable_domhtmlcss=1
 
-" ---> bling/vim-airline 配置
-"*************************************************
+"+===============================================+
+"| bling/vim-airline 配置                        |
+"+===============================================+
 if !exists('g:airline_symbols')
 	let g:airline_symbols = {}
 endif
@@ -169,8 +152,9 @@ endif
 let g:airline_left_sep = ''
 let g:airline_right_sep = ''
 
-" ---> vim-surround 配置
-"*************************************************
+"+===============================================+
+"| vim-surround 配置                             |
+"+===============================================+
 " let g:surround_37="{% \r %}"
 " let g:surround_123="{{ \r }}"
 
