@@ -39,11 +39,17 @@ Plugin 'JavaScript-syntax'
 " velocity语法高亮
 Plugin 'lepture/vim-velocity'
 
-" markdown语法高亮
-Plugin 'plasticboy/vim-markdown'
+" markdown, textile 语法高亮, octopress命令
+Plugin 'tangledhelix/vim-octopress'
+
+" markdown 实时预览
+" Plugin 'suan/vim-instant-markdown'
 
 " less语法高亮
 Plugin 'groenewege/vim-less'
+
+" build.gradle语法高亮
+Plugin 'tfnico/vim-gradle'
 
 " 状态栏加强，美化
 Plugin 'bling/vim-airline'
