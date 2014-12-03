@@ -13,10 +13,6 @@ source ~/.vimconfig/vimrc.plugin
 " 设置vim保存的命令数
 set history=700
 
-" 设置map leader 用来绑定自定义快捷键, 默认值是'\'
-let mapleader = ","
-let g:mapleader = ","
-
 " 配置backspace,使它在terminal能正确使用
 set backspace=eol,start,indent
 
@@ -36,9 +32,6 @@ if WINDOWS()
 else
     set wildignore+=.git\*,.hg\*,.svn\*
 endif
-
-" 设置快速保存快捷键
-nmap <leader>w w !sudo tee % > /dev/null
 
 "+===============================================+
 "| 文件相关                                      |
@@ -134,6 +127,9 @@ set list
 
 " 设置tab和空格样式,每行末尾的空格显示为'-'
 set lcs=tab:\|\ ,nbsp:%,trail:-
+
+" 使用空格代替tab
+" set expandtab
 
 " Tab键显示的宽度设置为4个空格
 set tabstop=4
