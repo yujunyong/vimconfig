@@ -129,16 +129,16 @@ set list
 set lcs=tab:\|\ ,nbsp:%,trail:-
 
 " 使用空格代替tab
-" set expandtab
+set expandtab
 
 " Tab键显示的宽度设置为4个空格
-set tabstop=4
+set tabstop=2
 
 " Tab键编辑的宽度设置为4个空格
-set softtabstop=4
+set softtabstop=2
 
 " 换行时自动缩进设置为4个空格
-set shiftwidth=4
+set shiftwidth=2
 
 " 设置缩进方式为自动缩进
 set autoindent
