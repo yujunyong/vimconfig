@@ -1,0 +1,2 @@
+" 加载vim config的配置
+source ~/.vimconfig/vimrc

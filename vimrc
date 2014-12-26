@@ -107,13 +107,13 @@ else
 	set fileencoding=utf-8
 endif
 
-" 解决菜单乱码
+" 解决菜单中文乱码
 if has("gui_running")
 	source $VIMRUNTIME/delmenu.vim
 	source $VIMRUNTIME/menu.vim
 endif
 
-" 解决consle输出乱码
+" 解决consle中文输出乱码
 language messages zh_CN.utf-8
 
 "+===============================================+
