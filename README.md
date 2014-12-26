@@ -11,3 +11,15 @@
 * 采用[Vundle](https://github.com/gmarik/Vundle.vim)管理vim的插件
 * 字体使用Monaco, 在os x，ubuntu上面都已经有这个字体，但是windows上面没有，需要另外下载安装
 * 在终端下需要设置`export TERM=screen-256color`，solarized theme才能正常使用，请看[Vim 配色问题](http://yujunyong.github.io/blog/2014/11/04/vim-pei-se-wen-ti/)
+
+## 安装
+### linux
+1. `git clone https://github.com/yujunyong/vimconfig.git ~/.vimconfig`
+2. 进入~/.vimconfig目录使用`./install.sh`安装
+3. 安装好以后进入vim，使用`:PluginInstall`命令安装插键
+
+### window
+1. `git clone https://github.com/yujunyong/vimconfig.git ~/.vimconfig`
+2. 安装Vundle `git clone https://github.com/gmarik/Vundle.vim.git ~/vimfiles/bundle/Vundle.vim`
+3. 将`~/.vimconfig/vimrc.template`文件拷贝到用户目录，重命名为`_vimrc`
+4. 安装好以后进入vim，使用`:PluginInstall`命令安装插键
