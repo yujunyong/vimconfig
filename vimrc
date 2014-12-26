@@ -70,6 +70,7 @@ set cursorline
 
 " 设置theme
 " 需要 'export TERM=screen-256color'
+" TODO 判断theme是否存在，不存在则用default theme
 if $TERM =~ '^xterm' || $TERM =~ '^screen' || $TERM=~ '256color$'
 	set background=dark
 	let g:solarized_termcolors = 256
