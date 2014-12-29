@@ -66,8 +66,14 @@ Plugin 'Shutnik/jshint2.vim'
 " 快速编写html，css的代码
 Plugin 'mattn/emmet-vim'
 
-" xml document tag completion and tag jumping.
-Plugin 'sukima/xmledit'
+" 关闭xml和html的标签
+Plugin 'docunext/closetag.vim'
+
+" 扩展'%'，使它适合html和xml
+Plugin 'vim-scripts/matchit.zip'
+
+" 使用tab补全代码
+Plugin 'ervandew/supertab'
 
 " 代码自动补全
 " Plugin 'Valloric/YouCompleteMe'
