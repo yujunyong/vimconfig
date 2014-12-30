@@ -30,20 +30,17 @@ Plugin 'L9'
 " 显示以空格缩进的线
 Plugin 'Yggdroot/indentLine'
 
-" vim 的theme
+" vim的theme
 Plugin 'altercation/vim-colors-solarized'
 
-" js语法高亮
-Plugin 'JavaScript-syntax'
+" js语法高亮和缩进
+Plugin 'pangloss/vim-javascript'
 
 " velocity语法高亮
 Plugin 'lepture/vim-velocity'
 
 " markdown, textile 语法高亮, octopress命令
 Plugin 'tangledhelix/vim-octopress'
-
-" markdown 实时预览
-" Plugin 'suan/vim-instant-markdown'
 
 " less语法高亮
 Plugin 'groenewege/vim-less'
@@ -57,12 +54,6 @@ Plugin 'bling/vim-airline'
 "+===============================================+
 "| 效率                                          |
 "+===============================================+
-" js语法，规范检察工具
-Plugin 'Shutnik/jshint2.vim'
-
-" 格式化代码工具
-" Plugin 'editorconfig/editorconfig-vim'
-
 " 快速编写html，css的代码
 Plugin 'mattn/emmet-vim'
 
@@ -74,9 +65,6 @@ Plugin 'vim-scripts/matchit.zip'
 
 " 使用tab补全代码
 Plugin 'ervandew/supertab'
-
-" 代码自动补全
-" Plugin 'Valloric/YouCompleteMe'
 
 " 编辑选中字符的两边符号
 Plugin 'tpope/vim-surround'
@@ -90,20 +78,20 @@ Plugin 'tpope/vim-repeat'
 " 代码对齐
 Plugin 'godlygeek/tabular'
 
-" awk文本分析处理
-Plugin 'tejr/vawk'
-
 " 在insert-modes, command-line modes在绑定emacs快捷键
 Plugin 'maxbrunsfeld/vim-emacs-bindings'
 
 " 整合ack
 Plugin 'Ack.vim'
 
-" 浏览代码的方法，变量
-" Plugin 'taglist.vim'
+" Fuzzy file, buffer, mru, tag, etc finder
+Plugin 'kien/ctrlp.vim'
 
 " 浏览文件
 Plugin 'The-NERD-tree'
+
+" outline 插件
+Plugin 'majutsushi/tagbar'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -113,46 +101,9 @@ filetype plugin indent on    " required
 "* Plugin 配置                                                         *
 "***********************************************************************
 "+===============================================+
-"| jshint2 配置                                  |
-"+===============================================+
-" set JSHint command path if it installed locally
-let jshint2_command='/usr/local/bin/jshint'
-
-" Lint JavaScript files after reading it
-" let jshint2_read=1
-
-" Lint JavaScript files after saving it
-" let jshint2_save=1
-
-" Do not automatically close orphaned error lists
-let jshint2_close=0
-
-" Skip lint confirmation for non JavaScript files
-let jshint2_confirm=0
-
-" Do not use colored messages
-" let jshint2_color=0
-
-" Hide error codes in error list
-let jshint2_error=0
-
-" Set default height of error list
-let jshint2_height=20
-
-"+===============================================+
 "| indentLine 配置                               |
 "+===============================================+
 let g:indentLine_color_term=239
-let g:indentLine_char='|'
-
-"+===============================================+
-"| JavaScript syntax 配置                        |
-"+===============================================+
-" 打开javascript折叠
-let b:javascript_fold=1
-
-" 打开javascript对dom、html和css的支持
-let javascript_enable_domhtmlcss=1
 
 "+===============================================+
 "| bling/vim-airline 配置                        |
