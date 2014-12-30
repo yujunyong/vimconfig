@@ -28,9 +28,9 @@ set wildmenu
 " 忽略下列文件
 set wildignore=*.o,*~,*.pyc
 if WINDOWS()
-    set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.DS_Store
+  set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.DS_Store
 else
-    set wildignore+=.git\*,.hg\*,.svn\*
+  set wildignore+=.git\*,.hg\*,.svn\*
 endif
 
 "+===============================================+
@@ -72,30 +72,30 @@ set cursorline
 " 需要 'export TERM=screen-256color'
 " TODO 判断theme是否存在，不存在则用default theme
 if $TERM =~ '^xterm' || $TERM =~ '^screen' || $TERM=~ '256color$'
-	set background=dark
-	let g:solarized_termcolors = 256
-	colorscheme solarized
+  set background=dark
+  let g:solarized_termcolors = 256
+  colorscheme solarized
 elseif has('gui_running')
-	set background=dark
-	let g:solarized_termcolors = 256
-	colorscheme solarized
+  set background=dark
+  let g:solarized_termcolors = 256
+  colorscheme solarized
 elseif $TERM =~ 'cons25'
-	colorscheme default
+  colorscheme default
 endif
 
 " 当在gui时设置额外的参数
 if has("gui_running")
-	set guioptions-=T
-	set guioptions-=e
-	set guioptions-=m
-	set t_Co=256
+  set guioptions-=T
+  set guioptions-=e
+  set guioptions-=m
+  set t_Co=256
 endif
 
 " 设置字体
 if OSX()
-	set guifont=Monaco:h12
+  set guifont=Monaco:h12
 else
-	set guifont=Monaco:h12:b
+  set guifont=Monaco:h12:b
 endif
 
 " 设置utf8为标准编码，en_US为标准语言
@@ -103,19 +103,21 @@ set encoding=utf-8
 
 set fileencodings=utf-8,chinese,latin-1
 if WINDOWS()
-	set fileencoding=chinese
+  set fileencoding=chinese
 else
-	set fileencoding=utf-8
+  set fileencoding=utf-8
 endif
 
 " 解决菜单中文乱码
 if has("gui_running")
-	source $VIMRUNTIME/delmenu.vim
-	source $VIMRUNTIME/menu.vim
+  source $VIMRUNTIME/delmenu.vim
+  source $VIMRUNTIME/menu.vim
 endif
 
-" 解决consle中文输出乱码
-language messages zh_CN.utf-8
+" 解决window下控制台中文输出乱码
+if WINDOWS()
+  language messages zh_CN.utf-8
+endif
 
 "+===============================================+
 "| tab 和 indent                                 |

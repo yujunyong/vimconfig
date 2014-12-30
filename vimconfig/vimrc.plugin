@@ -6,12 +6,12 @@ filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
 if !WINDOWS()
-	set rtp+=~/.vim/bundle/Vundle.vim
-	call vundle#begin()
+  set rtp+=~/.vim/bundle/Vundle.vim
+  call vundle#begin()
 else
-	set rtp+=~/vimfiles/bundle/Vundle.vim/
-	let path='~/vimfiles/bundle'
-	call vundle#begin(path)
+  set rtp+=~/vimfiles/bundle/Vundle.vim/
+  let path='~/vimfiles/bundle'
+  call vundle#begin(path)
 endif
 
 " let Vundle manage Vundle, required
@@ -109,7 +109,7 @@ let g:indentLine_color_term=239
 "| bling/vim-airline 配置                        |
 "+===============================================+
 if !exists('g:airline_symbols')
-	let g:airline_symbols = {}
+  let g:airline_symbols = {}
 endif
 
 let g:airline_left_sep = ''
@@ -120,4 +120,3 @@ let g:airline_right_sep = ''
 "+===============================================+
 " let g:surround_37="{% \r %}"
 " let g:surround_123="{{ \r }}"
-
