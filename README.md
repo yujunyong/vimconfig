@@ -14,12 +14,13 @@
 
 ## 安装
 ### linux
-1. `git clone https://github.com/yujunyong/vimconfig.git ~/.vimconfig`
+1. 在终端输入`git clone https://github.com/yujunyong/vimconfig.git ~/.vimconfig`
 2. 进入~/.vimconfig目录使用`./install.sh`安装
-3. 安装好以后进入vim，使用`:PluginInstall`命令安装插键
+3. 安装好以后进入vim，使用`:PluginInstall`命令安装插件
 
 ### window
-1. `git clone https://github.com/yujunyong/vimconfig.git ~/.vimconfig`
-2. 安装Vundle `git clone https://github.com/gmarik/Vundle.vim.git ~/vimfiles/bundle/Vundle.vim`
-3. 将`~/.vimconfig/vimrc.template`文件拷贝到用户目录，重命名为`_vimrc`
-4. 安装好以后进入vim，使用`:PluginInstall`命令安装插键
+1. 打开终端进入用户目录
+2. 输入命令`git clone https://github.com/yujunyong/vimconfig.git .vimconfig`
+3. 安装Vundle `git clone https://github.com/gmarik/Vundle.vim.git vimfiles/bundle/Vundle.vim`
+4. 将`.vimconfig/vimrc.template`文件拷贝到用户目录，重命名为`_vimrc`
+5. 安装好以后进入vim，使用`:PluginInstall`命令安装插件
