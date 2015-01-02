@@ -60,6 +60,9 @@ Plugin 'mattn/emmet-vim'
 " 关闭xml和html的标签
 Plugin 'docunext/closetag.vim'
 
+" 自动补全括号
+Plugin 'jiangmiao/auto-pairs'
+
 " 扩展'%'，使它适合html和xml
 Plugin 'vim-scripts/matchit.zip'
 
