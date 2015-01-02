@@ -22,7 +22,7 @@ set guioptions-=R
 set guioptions-=l
 set guioptions-=L
 
-"打开 WiLd menu
+" 打开 WiLd menu
 set wildmenu
 
 " 忽略下列文件
@@ -32,6 +32,12 @@ if WINDOWS()
 else
   set wildignore+=.git\*,.hg\*,.svn\*
 endif
+
+" 设置一些常用的快捷键
+noremap <Leader>d :NERDTree<CR>
+noremap <Leader>o :Tagbar<CR>
+noremap <Leader>s :CtrlP<CR>
+noremap q :q<CR>
 
 "+===============================================+
 "| 文件相关                                      |
