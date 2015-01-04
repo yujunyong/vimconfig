@@ -37,6 +37,9 @@ endif
 noremap <Leader>d :NERDTree<CR>
 noremap <Leader>o :Tagbar<CR>
 noremap <Leader>s :CtrlP<CR>
+
+" 保存只读文件
+noremap <Leader>w :w !sudo tee %<CR>
 noremap q :q<CR>
 
 "+===============================================+
