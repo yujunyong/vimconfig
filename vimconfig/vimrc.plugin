@@ -20,7 +20,6 @@ Plugin 'gmarik/Vundle.vim'
 " plugin from http://vim-scripts.org/vim/scripts.html
 Plugin 'L9'
 
-
 "+===============================================+
 "| vim界面                                       |
 "+===============================================+
@@ -110,6 +109,9 @@ Plugin 'majutsushi/tagbar'
 " git 插件
 Plugin 'tpope/vim-fugitive'
 
+" 在行首显示git diff标记
+Plugin 'airblade/vim-gitgutter'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -125,12 +127,11 @@ let g:indentLine_color_term=239
 "+===============================================+
 "| bling/vim-airline 配置                        |
 "+===============================================+
-if !exists('g:airline_symbols')
-  let g:airline_symbols = {}
-endif
+" 使用powerline的字符，这个可以显示字符型icon
+let g:airline_powerline_fonts = 1
 
-let g:airline_left_sep = ''
-let g:airline_right_sep = ''
+" 顶部显示airline类型的tab标签
+let g:airline#extensions#tabline#enabled = 1
 
 "+===============================================+
 "| vim-surround 配置                             |
