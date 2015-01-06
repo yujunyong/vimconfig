@@ -66,6 +66,14 @@ Plugin 'vim-scripts/matchit.zip'
 " 使用tab补全代码
 Plugin 'ervandew/supertab'
 
+" 实现snippets功能，以tab扩展代码
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+
+" snippets库
+Plugin 'honza/vim-snippets'
+
 " 编辑选中字符的两边符号
 Plugin 'tpope/vim-surround'
 
