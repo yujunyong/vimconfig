@@ -79,17 +79,12 @@ set cursorline
 
 " 设置theme
 " 需要 'export TERM=screen-256color'
-" TODO 判断theme是否存在，不存在则用default theme
-if $TERM =~ '^xterm' || $TERM =~ '^screen' || $TERM=~ '256color$'
-  set background=dark
-  let g:solarized_termcolors = 256
-  colorscheme solarized
-elseif has('gui_running')
-  set background=dark
-  let g:solarized_termcolors = 256
-  colorscheme solarized
-elseif $TERM =~ 'cons25'
+set background=dark
+if $TERM =~ 'cons25' || !filereadable(expand("~/.vim/bundle/vim-colors-solarized/colors/solarized.vim"))
   colorscheme default
+else
+  let g:solarized_termcolors = 256
+  colorscheme solarized
 endif
 
 " 当在gui时设置额外的参数
