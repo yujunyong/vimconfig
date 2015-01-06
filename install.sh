@@ -28,4 +28,6 @@ fi
 echo "\n\033[0;34m使用${PRO}模板文件, 将它添加到~/.vimrc\033[0m"
 cp $VIM/vimrc.template ~/.vimrc
 
-echo "\n\033[0;34m${PRO}安装完成，请进入vim使用':PluginInstall'命令完成插键的安装\033[0m"
+# 安装vim的插件
+vim +PluginInstall +qa
+echo "\n\033[0;34m${PRO}安装完成，欢迎使用\033[0m"
