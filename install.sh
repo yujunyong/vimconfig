@@ -30,6 +30,11 @@ fi
 echo "\n\033[0;34m使用${PRO}模板文件, 将它添加到~/.vimrc\033[0m"
 cp $VIM/vimrc.template ~/.vimrc
 
+# 安装airline需要使用到的字体
+echo "\n\033[0;34m安装${PRO}需要使用的字体...\033[0m]"
+git clone https://github.com/powerline/fonts.git /tmp/powerline-fonts
+/tmp/powerline-fonts/install.sh
+
 # 安装vim的插件
 vim +PluginInstall +qa
 echo "\n\033[0;34m${PRO}安装完成，欢迎使用\033[0m"
