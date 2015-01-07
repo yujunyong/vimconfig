@@ -87,8 +87,9 @@ set cursorline
 
 " 设置theme
 " 需要 'export TERM=screen-256color'
+" DODO:判断colorscheme是否存再进行设置
 set background=dark
-if $TERM =~ 'cons25' || !filereadable(expand("~/.vim/bundle/vim-colors-solarized/colors/solarized.vim"))
+if $TERM =~ 'cons25'
   colorscheme default
 else
   let g:solarized_termcolors = 256
