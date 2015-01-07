@@ -136,6 +136,9 @@ let g:airline_powerline_fonts = 1
 " 顶部显示airline类型的tab标签
 let g:airline#extensions#tabline#enabled = 1
 
+" 单个tab时不显示buffers
+let g:airline#extensions#tabline#show_buffers = 0
+
 " vim-surround 配置
 "=================
 " let g:surround_37="{% \r %}"
