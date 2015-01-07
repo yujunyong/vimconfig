@@ -105,7 +105,7 @@ endif
 
 " 设置字体，必须是'https://github.com/powerline/fonts'里面的字体，
 " 否则airline里面的特殊字符无法正常显示
-set guifont=Ubuntu\ Mono\ derivative\ Powerline:h14
+set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h14
 
 " 设置utf8为标准编码，en_US为标准语言
 set encoding=utf-8
