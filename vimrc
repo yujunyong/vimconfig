@@ -42,6 +42,7 @@ endif
 noremap <Leader>d :NERDTree<CR>
 noremap <Leader>o :Tagbar<CR>
 noremap <Leader>s :CtrlP<CR>
+noremap <Leader>u :UndotreeToggle<CR>
 
 " 保存只读文件
 noremap <Leader>w :w !sudo tee %<CR>

@@ -106,6 +106,9 @@ Plugin 'kien/ctrlp.vim'
 " 浏览文件
 Plugin 'The-NERD-tree'
 
+" 可视化undo tree
+Plugin 'mbbill/undotree'
+
 
 
 
