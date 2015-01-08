@@ -14,6 +14,7 @@ source ~/.vimconfig/vimconfig/vimrc.plugin
 "================================================
 " 基本设置
 "================================================
+
 " 设置vim保存的命令数
 set history=700
 
@@ -26,7 +27,7 @@ set guioptions-=R
 set guioptions-=l
 set guioptions-=L
 
-" 打开 WiLd menu
+" 打开WiLd menu
 set wildmenu
 
 " 忽略下列文件
@@ -45,6 +46,9 @@ noremap <Leader>s :CtrlP<CR>
 " 保存只读文件
 noremap <Leader>w :w !sudo tee %<CR>
 noremap q :q<CR>
+
+
+
 
 " 文件相关
 "=================
@@ -77,8 +81,12 @@ set foldmethod=manual
 " 总是显示状态栏
 set laststatus=2
 
+
+
+
 " theme 和 font
 "=================
+
 " 开启语法高亮
 syntax enable
 
@@ -129,8 +137,11 @@ if WINDOWS()
   language messages zh_CN.utf-8
 endif
 
+
+
 " tab 和 indent
 "=================
+
 " 设置smarttab
 set smarttab
 
@@ -157,6 +168,9 @@ set autoindent
 
 " 自动换行
 set wrap
+
+
+
 
 " 搜索
 "=================

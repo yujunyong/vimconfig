@@ -1,5 +1,5 @@
 "================================================
-" Vundle.vim Plugin 管理
+" Vundle.vim Plugin管理
 "================================================
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -14,14 +14,18 @@ else
   call vundle#begin(path)
 endif
 
-" let Vundle manage Vundle, required
+
+
+
+" 使用Vundle管理插件，必装
 Plugin 'gmarik/Vundle.vim'
 
-" plugin from http://vim-scripts.org/vim/scripts.html
-Plugin 'L9'
+
+
 
 " vim界面
 "=================
+
 " 语法检查
 Plugin 'scrooloose/syntastic'
 
@@ -37,7 +41,7 @@ Plugin 'pangloss/vim-javascript'
 " velocity语法高亮
 Plugin 'lepture/vim-velocity'
 
-" markdown, textile 语法高亮, octopress命令
+" markdown, textile语法高亮, octopress命令
 Plugin 'tangledhelix/vim-octopress'
 
 " less语法高亮
@@ -49,8 +53,12 @@ Plugin 'tfnico/vim-gradle'
 " 状态栏加强，美化
 Plugin 'bling/vim-airline'
 
+
+
+
 " 效率
 "=================
+
 " 快速编写html，css的代码
 Plugin 'mattn/emmet-vim'
 
@@ -92,25 +100,29 @@ Plugin 'godlygeek/tabular'
 " 在insert-modes, command-line modes在绑定emacs快捷键
 Plugin 'maxbrunsfeld/vim-emacs-bindings'
 
-" 整合ack
-Plugin 'Ack.vim'
-
-" Fuzzy file, buffer, mru, tag, etc finder
+" 查找文件，buffer，最近使用文件，tag等
 Plugin 'kien/ctrlp.vim'
 
 " 浏览文件
 Plugin 'The-NERD-tree'
 
-" outline 插件
-Plugin 'majutsushi/tagbar'
+
+
 
 " 整合其它工具
 "=================
-" git 插件
+" git插件, 需要安装git，http://git-scm.com/
 Plugin 'tpope/vim-fugitive'
 
-" 在行首显示git diff标记
+" 在行首显示git diff标记, 需要安装git，http://git-scm.com/
 Plugin 'airblade/vim-gitgutter'
+
+" 整合ack, 快速搜索文件内容，需要安装ack，http://beyondgrep.com/
+Plugin 'Ack.vim'
+
+" outline插件, 需要安装ctags, http://ctags.sourceforge.net/
+Plugin 'majutsushi/tagbar'
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -121,14 +133,17 @@ filetype plugin indent on    " required
 
 
 "================================================
-" Plugin 配置
+" Plugin配置
 "================================================
 
-" indentLine 配置
+" 'Yggdroot/indentLine'配置
 "=================
 let g:indentLine_color_term=239
 
-" bling/vim-airline 配置
+
+
+
+" 'bling/vim-airline'配置
 "=================
 " 使用powerline的字符，这个可以显示字符型icon
 let g:airline_powerline_fonts = 1
@@ -139,7 +154,10 @@ let g:airline#extensions#tabline#enabled = 1
 " 单个tab时不显示buffers
 let g:airline#extensions#tabline#show_buffers = 0
 
-" vim-surround 配置
+
+
+
+" 'tpope/vim-surround'配置
 "=================
 " let g:surround_37="{% \r %}"
 " let g:surround_123="{{ \r }}"
