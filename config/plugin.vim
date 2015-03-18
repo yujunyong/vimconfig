@@ -126,6 +126,9 @@ Plugin 'Ack.vim'
 " outline插件, 需要安装ctags, http://ctags.sourceforge.net/
 Plugin 'majutsushi/tagbar'
 
+" python插件
+Plugin 'klen/python-mode'
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

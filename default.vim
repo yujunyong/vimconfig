@@ -2,10 +2,10 @@
 " 加载一些配置
 "================================================
 " 加载自己定义的一些function
-source ~/.vimconfig/vimconfig/vimrc.function
+source ~/.vimconfig/config/function.vim
 
 " 加载Plugin及其配置
-source ~/.vimconfig/vimconfig/vimrc.plugin
+source ~/.vimconfig/config/plugin.vim
 
 
 
