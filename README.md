@@ -3,7 +3,7 @@
 ## 截图
 
 ### 终端下的截图
-![vim 截图](http://5xi7es.com1.z0.glb.clouddn.com/vim.png)
+![vim 截图](http://7xi7es.com1.z0.glb.clouddn.com/vim.png)
 
 ## 配置简介
 * 采用[Vundle](https://github.com/gmarik/Vundle.vim)管理vim的插件
