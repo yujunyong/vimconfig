@@ -1,11 +1,9 @@
 # 我的vim配置
 
 ## 截图
-### macvim 截图
-![macvim 截图](https://yujunyong.github.io/images/vim/macvim.png)
 
 ### 终端下的截图
-![macvim 截图](https://yujunyong.github.io/images/vim/vim.png)
+![vim 截图](http://5xi7es.com1.z0.glb.clouddn.com/vim.png)
 
 ## 配置简介
 * 采用[Vundle](https://github.com/gmarik/Vundle.vim)管理vim的插件
