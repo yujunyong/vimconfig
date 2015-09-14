@@ -53,7 +53,8 @@ Plugin 'tfnico/vim-gradle'
 " 状态栏加强，美化
 Plugin 'bling/vim-airline'
 
-
+" 行尾空格处理
+Plugin 'ntpeters/vim-better-whitespace'
 
 
 " 效率
